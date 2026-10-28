@@ -3,24 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página en Google Cloud</title>
+    <title>Dulce Antojo - Pastelería Artesanal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff9f5;
+            color: #4a3b32;
             text-align: center;
-            padding: 50px;
-            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #e8a598;
+            color: white;
+            padding: 50px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #333;
+            margin: 0;
+            font-size: 2.8em;
         }
-        p {
-            color: #666;
+        p.subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+            width: 240px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: #d87060;
+            margin-top: 0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 40px;
+            background-color: #e8a598;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn:hover {
+            background-color: #d87060;
         }
     </style>
 </head>
 <body>
-    <h1>¡Hola! Mi sitio web desde Google Cloud Shell</h1>
-    <p>Este es mi mini proyecto conectado a GitHub.</p>
+
+    <header>
+        <h1>Pastelería Dulce Antojo 🍰</h1>
+        <p class="subtitle">Sabores artesanales hechos con amor</p>
+    </header>
+
+    <div class="container">
+        <h2>Nuestras Especialidades</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🎂 Tortas Personalizadas</h3>
+                <p>Diseños únicos para cumpleaños, bodas y eventos especiales.</p>
+            </div>
+            <div class="card">
+                <h3>🧁 Postres Individuales</h3>
+                <p>Cheesecakes, tarts de frutas y mousses recién elaborados.</p>
+            </div>
+            <div class="card">
+                <h3>🍪 Galletas & Bocaditos</h3>
+                <p>Detalles dulces para compartir en cualquier ocasión.</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn">¡Haz tu pedido aquí!</a>
+    </div>
+
 </body>
 </html>
